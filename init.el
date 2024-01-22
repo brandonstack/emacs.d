@@ -186,6 +186,9 @@
 
 (provide 'init)
 
+;; customization - newbie
+(color-theme-sanityinc-solarized-dark)
+(set-face-attribute 'default nil :height 120)
 ;; Local Variables:
 ;; coding: utf-8
 ;; no-byte-compile: t
