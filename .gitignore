@@ -57,3 +57,6 @@ site-lisp/package/
 /eln-cache/
 /projects
 /forge-*.sqlite
+/server/
+/org-persist/
+projectile.cache
