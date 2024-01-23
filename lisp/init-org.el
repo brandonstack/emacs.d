@@ -22,6 +22,12 @@
 
 ;;; Code:
 
+
+;; --------
+;; Capture
+(setq org-directory "~/Workspace/textdb.me")
+(setq org-default-notes-file "~/Workspace/textdb.me/inbox.org")
+
 (when *is-a-mac*
   (maybe-require-package 'grab-mac-link))
 
