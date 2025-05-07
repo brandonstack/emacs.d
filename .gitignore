@@ -4,7 +4,7 @@
 /network-security.data
 /.session
 /session.*
-/custom.el
+# /custom.el
 *.elc
 CVS
 .svn
@@ -58,3 +58,4 @@ site-lisp/package/
 /projects
 /forge-*.sqlite
 /projectile.cache
+*.db
