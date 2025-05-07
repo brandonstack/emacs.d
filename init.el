@@ -59,7 +59,6 @@
 ;; Load configs for specific features and modes
 (require-package 'diminish)
 (maybe-require-package 'scratch)
-(require-package 'command-log-mode)
 
 (require 'init-frame-hooks)
 (require 'init-xterm)
@@ -146,10 +145,7 @@
 (require 'init-folding)
 (require 'init-dash)
 
-(require 'init-ledger)
 (require 'init-lua)
-(require 'init-uiua)
-(require 'init-zig)
 (require 'init-terminals)
 
 ;; Extra packages which don't require any configuration

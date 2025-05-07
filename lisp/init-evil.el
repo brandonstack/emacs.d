@@ -4,7 +4,20 @@
 (require-package 'evil)
 (evil-mode 1)
 
-;; (setq evil-want-C-i-jump nil)
-;; (evil-define-key 'normal org-mode-map (kbd "<tab>") #'org-cycle)
+;; leader key
+(setq evil-leader/leader "<SPC>")
+(require-package 'evil-leader)
+(evil-leader/set-key
+  "w" 'save-buffer
+  "q" 'kill-current-buffer
+  "b" 'switch-to-buffer
+  "f" 'find-file
+  "n" 'org-roam-node-find)
+
+(require-package 'evil-collection)
+(evil-collection-init)
+
+(with-eval-after-load 'org
+  (define-key evil-normal-state-map (kbd "<tab>") 'org-cycle))
 
 (provide 'init-evil)
