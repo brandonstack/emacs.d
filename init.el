@@ -73,6 +73,7 @@
 (require 'init-ibuffer)
 (require 'init-flymake)
 (require 'init-eglot)
+(require 'init-evil)
 
 (require 'init-recentf)
 (require 'init-minibuffer)
