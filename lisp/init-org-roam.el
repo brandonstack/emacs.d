@@ -7,14 +7,12 @@
 (require-package 'org-roam)
 
 (setq org-roam-directory (file-truename org-folder))
-(setq org-roam-dailies-directory "daily/")
 (org-roam-db-autosync-mode)
 
 (define-key global-map (kbd "C-c n l") 'org-roam-buffer-toggle)
 (define-key global-map (kbd "C-c n f") 'org-roam-node-find)
 (define-key global-map (kbd "C-c n i") 'org-roam-node-insert)
 (define-key global-map (kbd "C-c n c") 'org-roam-capture)
-(define-key global-map (kbd "C-c n d") 'org-roam-dailies-capture-today)
 
 
 ;; org-roam-ui

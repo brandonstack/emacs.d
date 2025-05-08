@@ -62,9 +62,10 @@
 
 (require 'init-frame-hooks)
 (require 'init-xterm)
-(require 'init-themes)
 (require 'init-osx-keys)
 (require 'init-gui-frames)
+(require 'init-tree)
+(require 'init-themes)
 (require 'init-dired)
 (require 'init-isearch)
 (require 'init-grep)
@@ -99,8 +100,11 @@
 (require 'init-csv)
 (require 'init-erlang)
 (require 'init-javascript)
+
 (require 'init-org)
 (require 'init-org-roam)
+(require 'init-org-journal)
+
 (require 'init-nxml)
 (require 'init-html)
 (require 'init-css)
