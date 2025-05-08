@@ -99,7 +99,6 @@
 (require 'init-csv)
 (require 'init-erlang)
 (require 'init-javascript)
-(require 'init-php)
 (require 'init-org)
 (require 'init-org-roam)
 (require 'init-nxml)

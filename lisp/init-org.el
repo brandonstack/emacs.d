@@ -217,7 +217,7 @@ typical word processor."
                                 (org-agenda-skip-entry-if 'nottodo '("NEXT")))))
                         (org-tags-match-list-sublevels t)
                         (org-agenda-sorting-strategy
-                         '(todo-state-down effort-up category-keep))))
+                         '(todo-state-down priority-down effort-up category-keep))))
             (tags-todo ,active-project-match
                        ((org-agenda-overriding-header "Projects")
                         (org-tags-match-list-sublevels t)
