@@ -6,7 +6,7 @@
 ;; org-roam
 (require-package 'org-roam)
 
-(setq org-roam-directory (file-truename org-folder))
+(setq org-roam-directory (file-truename org-roam-folder))
 (org-roam-db-autosync-mode)
 
 (define-key global-map (kbd "C-c n l") 'org-roam-buffer-toggle)
