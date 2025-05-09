@@ -6,7 +6,7 @@
 (require-package 'neotree)
 
 ;; 在 Emacs 启动时显示 Neotree (可选)
-(add-hook 'emacs-startup-hook 'neotree-show)
+;; (add-hook 'emacs-startup-hook 'neotree-show)
 
 ;; 定义一个快捷键来切换 Neotree 的显示 (推荐)
 (global-set-key (kbd "C-c C-t") 'neotree-toggle)
