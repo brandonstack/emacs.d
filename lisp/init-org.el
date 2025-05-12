@@ -184,8 +184,16 @@ typical word processor."
 
   (setq org-agenda-compact-blocks t
         org-agenda-sticky t
-        org-agenda-start-on-weekday nil
         org-agenda-span 'day
+
+        org-log-done 'time
+        org-log-into-drawer t
+        org-agenda-start-with-log-mode t
+
+        ;; tasks
+        org-agenda-skip-deadline-prewarning-if-scheduled t
+        org-agenda-skip-scheduled-if-deadline-is-shown t
+
         org-agenda-include-diary nil
         org-agenda-sorting-strategy
         '((agenda habit-down time-up user-defined-up effort-up category-keep)
@@ -198,7 +206,12 @@ typical word processor."
            ((org-agenda-overriding-header "Notes")
             (org-tags-match-list-sublevels t)))
           ("g" "GTD"
-           ((agenda "" nil)
+           ((agenda "" ((org-agenda-span 'day)
+                        (org-agenda-start-day nil)
+                        (org-agenda-skip-function nil)
+                        (org-deadline-warning-days 1)
+                        (org-agenda-prefix-format '((agenda . " %i %-12:c%?-12t% s")))
+                        ))
             (tags "INBOX"
                   ((org-agenda-overriding-header "Inbox")
                    (org-tags-match-list-sublevels nil)))
