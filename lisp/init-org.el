@@ -400,6 +400,8 @@ typical word processor."
 
 (require-package 'org-download)
 (setq org-download-image-dir (concat org-folder "/asserts/images"))
+(add-hook 'dired-mode-hook 'org-download-enable)
+(add-hook 'org-mode-hook 'org-download-enable)
 
 (setq org-display-inline-images t)
 
