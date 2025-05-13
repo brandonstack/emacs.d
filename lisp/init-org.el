@@ -397,6 +397,11 @@ typical word processor."
       (sql . t)
       (sqlite . t)))))
 
+
+(require-package 'org-download)
+(setq org-download-image-dir (concat org-folder "/asserts/images"))
+
+(setq org-display-inline-images t)
 
 (provide 'init-org)
 ;;; init-org.el ends here
