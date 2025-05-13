@@ -1,6 +1,7 @@
 ;;; init-evil.el --- Evil keybinding -*- lexical-binding: t -*-
 
 ;;; Code
+(setq evil-want-keybinding nil)
 (require-package 'evil)
 (evil-mode 1)
 

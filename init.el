@@ -54,7 +54,7 @@
 
 
 ;; Allow users to provide an optional "init-preload-local.el"
-(require 'init-preload-local nil t)
+(require 'init-preload-local nil nil)
 
 ;; Load configs for specific features and modes
 (require-package 'diminish)
@@ -64,6 +64,7 @@
 (require 'init-xterm)
 (require 'init-osx-keys)
 (require 'init-gui-frames)
+(require 'init-chinese)
 (require 'init-tree)
 (require 'init-themes)
 (require 'init-dired)
