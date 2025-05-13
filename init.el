@@ -20,7 +20,9 @@
 
 (defconst *spell-check-support-enabled* nil) ;; Enable with t if you prefer
 (defconst *is-a-mac* (eq system-type 'darwin))
-
+(defun is-wsl ()
+  "Return non-nil if running inside WSL."
+  (getenv "WSL_DISTRO_NAME"))
 
 ;; Adjust garbage collection threshold for early startup (see use of gcmh below)
 (setq gc-cons-threshold (* 128 1024 1024))
@@ -59,6 +61,10 @@
 ;; Load configs for specific features and modes
 (require-package 'diminish)
 (maybe-require-package 'scratch)
+
+(when (is-wsl)
+  (set-face-attribute 'default nil :font "LXGW WenKai Mono" :height 200)
+  )
 
 (require 'init-frame-hooks)
 (require 'init-xterm)
