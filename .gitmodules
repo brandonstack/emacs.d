@@ -1,6 +1,0 @@
-[submodule "site-lisp/copilot.el"]
-	path = site-lisp/copilot.el
-	url = https://github.com/copilot-emacs/copilot.el.git
-[submodule "site-lisp/gptel"]
-	path = site-lisp/gptel
-	url = https://github.com/karthink/gptel.git

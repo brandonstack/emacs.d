@@ -63,7 +63,10 @@
 (maybe-require-package 'scratch)
 
 (when (is-wsl)
-  (set-face-attribute 'default nil :font "LXGW WenKai Mono" :height 200)
+  ;; (set-face-attribute 'default nil :font "LXGW WenKai Mono" :height 200)
+  (set-face-attribute 'default nil :font "AdwaitaMono-Regular" :height 200)
+  ;; (set-face-attribute 'default nil :font "LXGW WenKai Mono" :height 120)
+  (set-face-attribute 'default nil :font "AdwaitaMono-Regular" :height 120)
   )
 
 (require 'init-frame-hooks)
@@ -150,6 +153,7 @@
 (when *spell-check-support-enabled*
   (require 'init-spelling))
 
+(require 'init-llm)
 (require 'init-misc)
 
 (require 'init-folding)
