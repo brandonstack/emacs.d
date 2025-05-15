@@ -159,6 +159,7 @@
 (require 'init-folding)
 (require 'init-dash)
 
+(require 'init-beancount)
 (require 'init-lua)
 (require 'init-terminals)
 
