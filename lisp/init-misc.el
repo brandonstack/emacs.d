@@ -988,7 +988,7 @@ might be bad."
   (add-hook 'after-save-hook 'cleanup-org-tables nil 'make-it-local)
   (orgtbl-mode 1) ; enable key bindings
   ;; don't wrap lines because there is table in `markdown-mode'
-  (setq truncate-lines t))
+  (setq truncate-lines nil))
 (add-hook 'markdown-mode-hook 'markdown-mode-hook-setup)
 ;; }}
 
