@@ -56,6 +56,7 @@
     nov
     bbdb
     esup ; Emacs start up profiler
+    org-cliplink
     native-complete
     company-native-complete
     js2-mode ; need new features
